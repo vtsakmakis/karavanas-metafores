@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Πάρτε Προσφορά - ΚΑΡΑΒΑΝΑΣ</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="img"><img src="./images/ChatGPT Image Jun 8, 2025, 12_57_58 AM.png" alt=""></div>
+            </div>
+            <div class="nav">
+                <a href="./index.html">Αρχική</a>
+                <a href="./learn.html">Σχετικά με εμάς</a>
+                <a href="./services.html">Υπηρεσίες</a>
+                <a href="./contact.html">Επικοινωνία</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-page">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h1>Πάρτε Προσφορά</h1>
+                <p>Συμπληρώστε την παρακάτω φόρμα και θα επικοινωνήσουμε μαζί σας άμεσα</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Διεύθυνση</h3>
+                        <p>Περιστέρι, Αθήνα</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Τηλέφωνο</h3>
+                        <p>+30 697 123 4567</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>info@grhgoresmetafores.gr</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Ωράριο</h3>
+                        <p>Δευτέρα - Παρασκευή: 08:00 - 20:00</p>
+                        <p>Σάββατο: 09:00 - 15:00</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Ονοματεπώνυμο *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Τηλέφωνο *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Υπηρεσία *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Επιλέξτε υπηρεσία</option>
+                            <option value="metafores">Μεταφορές</option>
+                            <option value="metakomiseis">Μετακομίσεις</option>
+                            <option value="anypseis">Ανυψώσεις</option>
+                            <option value="syskevasia">Συσκευασία</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="from">Από *</label>
+                        <input type="text" id="from" name="from" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="to">Προς *</label>
+                        <input type="text" id="to" name="to" required>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="message">Περιγραφή Μεταφοράς *</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label class="checkbox-container">
+                            <input type="checkbox" required>
+                            <span class="checkmark"></span>
+                            Συμφωνώ με την επεξεργασία των προσωπικών μου δεδομένων
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        <span>Αποστολή</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Here you would typically handle the form submission
+            alert('Ευχαριστούμε για το μήνυμά σας! Θα επικοινωνήσουμε μαζί σας άμεσα.');
+            this.reset();
+        });
+    </script>
+</body>
+</html> 

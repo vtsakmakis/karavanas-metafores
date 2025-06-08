@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Αξιολογήστε μας - ΚΑΡΑΒΑΝΑΣ</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="rate.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="img"><img src="./images/ChatGPT Image Jun 8, 2025, 12_57_58 AM.png" alt=""></div>
+            </div>
+            <div class="nav">
+                <a href="index.html">Αρχική</a>
+                <a href="./learn.html">Σχετικά με εμάς</a>
+                <a href="./services.html">Υπηρεσίες</a>
+                <a href="./contact.html">Επικοινωνία</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="rate-page">
+        <div class="rate-container">
+            <h1>Αξιολογήστε την Εμπειρία σας</h1>
+            <p class="rate-subtitle">Η γνώμη σας είναι σημαντική για εμάς</p>
+            
+            <div class="rating-form">
+                <div class="star-rating">
+                    <div class="stars">
+                        <span class="star" data-rating="1">★</span>
+                        <span class="star" data-rating="2">★</span>
+                        <span class="star" data-rating="3">★</span>
+                        <span class="star" data-rating="4">★</span>
+                        <span class="star" data-rating="5">★</span>
+                    </div>
+                    <p class="rating-text">Επιλέξτε αστέρια</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="service-type">Τύπος Υπηρεσίας</label>
+                    <select id="service-type" required>
+                        <option value="">Επιλέξτε υπηρεσία</option>
+                        <option value="transport">Μεταφορά</option>
+                        <option value="moving">Μετακόμιση</option>
+                        <option value="lifting">Ανύψωση</option>
+                        <option value="packing">Συσκευασία</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">Περιγράψτε την εμπειρία σας</label>
+                    <textarea id="experience" rows="4" placeholder="Πείτε μας για την εμπειρία σας..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Όνομα</label>
+                    <input type="text" id="name" placeholder="Το όνομά σας" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Το email σας" required>
+                </div>
+
+                <button type="submit" class="submit-rating">Υποβολή Αξιολόγησης</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="./images/ChatGPT Image Jun 8, 2025, 12_57_58 AM.png" alt="Company Logo">
+                    <h3>ΚΑΡΑΒΑΝΑΣ</h3>
+                </div>
+                <p class="footer-description">Αξιόπιστες μεταφορές και μετακομίσεις σε όλη την Ελλάδα</p>
+            </div>
+            <div class="footer-right">
+                <div class="footer-contact">
+                    <h4>Επικοινωνία</h4>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <span>+30 210 1234567</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <span>+30 697 1234567</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <span>info@grhgoresmetafores.gr</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span>Περιστέρι, Αθήνα</span>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h4>Ακολουθήστε μας</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ΚΑΡΑΒΑΝΑΣ. Με επιφύλαξη παντός δικαιώματος.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Star Rating System
+        const stars = document.querySelectorAll('.star');
+        const ratingText = document.querySelector('.rating-text');
+        let currentRating = 0;
+
+        stars.forEach(star => {
+            star.addEventListener('mouseover', function() {
+                const rating = this.getAttribute('data-rating');
+                updateStars(rating);
+            });
+
+            star.addEventListener('click', function() {
+                currentRating = this.getAttribute('data-rating');
+                updateStars(currentRating);
+                updateRatingText(currentRating);
+            });
+        });
+
+        document.querySelector('.stars').addEventListener('mouseout', function() {
+            updateStars(currentRating);
+        });
+
+        function updateStars(rating) {
+            stars.forEach(star => {
+                const starRating = star.getAttribute('data-rating');
+                if (starRating <= rating) {
+                    star.style.color = '#FFD700';
+                } else {
+                    star.style.color = '#ccc';
+                }
+            });
+        }
+
+        function updateRatingText(rating) {
+            const texts = {
+                1: 'Πολύ Κακή',
+                2: 'Κακή',
+                3: 'Μέτρια',
+                4: 'Καλή',
+                5: 'Εξαιρετική'
+            };
+            ratingText.textContent = texts[rating] || 'Επιλέξτε αστέρια';
+        }
+
+        // Form Submission
+        document.querySelector('.rating-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Here you would typically send the data to your server
+            alert('Ευχαριστούμε για την αξιολόγησή σας!');
+            window.location.href = 'main.html';
+        });
+    </script>
+</body>
+</html> 
